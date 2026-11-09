@@ -1,0 +1,1034 @@
+/* ===========================
+   GOOGLE FONT RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background: #071c13;
+
+    color: white;
+
+    overflow-x: hidden;
+
+}
+
+/* ===========================
+BACKGROUND
+=========================== */
+
+.hero {
+
+    width: 100%;
+    height: 100vh;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .45),
+            rgba(0, 0, 0, .45)),
+        url("images/forest.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.overlay {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: linear-gradient(rgba(0, 50, 20, .2),
+
+            rgba(0, 0, 0, .6));
+
+    backdrop-filter: blur(2px);
+
+}
+
+/* ===========================
+NAVIGATION
+=========================== */
+
+nav {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    padding: 18px 70px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, .25);
+
+    backdrop-filter: blur(10px);
+
+}
+
+.logo {
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    color: #d8ffda;
+
+}
+
+nav ul {
+
+    display: flex;
+
+    gap: 35px;
+
+    list-style: none;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition: .3s;
+
+}
+
+nav a:hover {
+
+    color: #7effa1;
+
+}
+
+/* ===========================
+HERO CONTENT
+=========================== */
+
+.hero-content {
+
+    position: relative;
+
+    text-align: center;
+
+    max-width: 850px;
+
+    z-index: 20;
+
+}
+
+.hero-content h1 {
+
+    font-size: 70px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    margin-bottom: 20px;
+
+    animation: fadeDown 1.2s;
+
+}
+
+.hero-content p {
+
+    font-size: 20px;
+
+    line-height: 35px;
+
+    margin-bottom: 40px;
+
+    animation: fadeUp 1.5s;
+
+}
+
+.hero button {
+
+    padding: 16px 45px;
+
+    font-size: 18px;
+
+    border: none;
+
+    border-radius: 40px;
+
+    cursor: pointer;
+
+    background: #48c774;
+
+    color: white;
+
+    transition: .4s;
+
+}
+
+.hero button:hover {
+
+    background: #31b362;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(0, 255, 100, .4);
+
+}
+
+/* ===========================
+SECTIONS
+=========================== */
+
+section {
+
+    padding: 100px 10%;
+
+}
+
+.title {
+
+    text-align: center;
+
+    font-size: 50px;
+
+    margin-bottom: 70px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+}
+
+/* ===========================
+ABOUT
+=========================== */
+
+.about {
+
+    text-align: center;
+
+    background: #0d291c;
+
+}
+
+.about h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 30px;
+
+}
+
+.about p {
+
+    font-size: 19px;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    line-height: 40px;
+
+    color: #d7d7d7;
+
+}
+
+/* ===========================
+MASTER CARDS
+=========================== */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 35px;
+
+}
+
+.card {
+
+    background: rgba(255, 255, 255, .08);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    backdrop-filter: blur(15px);
+
+    transition: .4s;
+
+    overflow: hidden;
+
+}
+
+.card:hover {
+
+    transform: translateY(-15px);
+
+    box-shadow: 0 25px 50px rgba(0, 255, 120, .2);
+
+}
+
+.card img {
+
+    width: 100%;
+
+    height: 340px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+
+    transition: .4s;
+
+}
+
+.card:hover img {
+
+    transform: scale(1.05);
+
+}
+
+.card h3 {
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+}
+
+.card p {
+
+    line-height: 30px;
+
+    color: #d0d0d0;
+
+    margin-bottom: 20px;
+
+}
+
+.card button {
+
+    padding: 12px 28px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #4cd964;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.card button:hover {
+
+    background: #3fb657;
+
+}
+
+/* ===========================
+MEDITATION SECTION
+=========================== */
+
+#techniques {
+
+    background: #0b2016;
+
+}
+
+.accordion {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+.item {
+
+    background: rgba(255, 255, 255, .08);
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    transition: .4s;
+
+}
+
+.item:hover {
+
+    transform: translateX(12px);
+
+}
+
+.item h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+.item p {
+
+    line-height: 32px;
+
+    color: #d9d9d9;
+
+}
+
+/* ===========================
+AUDIO PLAYER
+=========================== */
+
+.music {
+
+    text-align: center;
+
+}
+
+.audioCards {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 40px;
+
+    margin-top: 40px;
+
+}
+
+.audioCards div {
+
+    background: rgba(255, 255, 255, .08);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+}
+
+audio {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+/* ==========================================
+   QUOTES SECTION
+========================================== */
+
+#quotes {
+
+    background: linear-gradient(180deg, #0a2417, #06140d);
+
+    text-align: center;
+
+}
+
+#quotes h2 {
+
+    font-size: 48px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    margin-bottom: 40px;
+
+}
+
+#quoteBox {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(18px);
+
+    font-size: 24px;
+
+    line-height: 42px;
+
+    font-style: italic;
+
+    color: #ffffff;
+
+    transition: .4s;
+
+}
+
+#quotes button {
+
+    margin-top: 40px;
+
+    padding: 15px 40px;
+
+    border: none;
+
+    border-radius: 40px;
+
+    background: #48c774;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: .3s;
+
+}
+
+#quotes button:hover {
+
+    background: #2fa85a;
+
+    transform: scale(1.05);
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+
+    background: #031008;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+footer h3 {
+
+    font-size: 32px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    margin-bottom: 20px;
+
+}
+
+footer p {
+
+    color: #a6a6a6;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* ==========================================
+   FLOATING LEAVES
+========================================== */
+
+.leaves {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 1;
+
+}
+
+.leaves span {
+
+    position: absolute;
+
+    display: block;
+
+    width: 22px;
+
+    height: 22px;
+
+    background: #78d678;
+
+    opacity: .4;
+
+    border-radius: 20% 80% 40% 60%;
+
+    animation: leafFall linear infinite;
+
+}
+
+/* Random Positions */
+
+.leaves span:nth-child(1) {
+
+    left: 5%;
+
+    animation-duration: 16s;
+
+    animation-delay: 0s;
+
+}
+
+.leaves span:nth-child(2) {
+
+    left: 25%;
+
+    animation-duration: 20s;
+
+    animation-delay: 3s;
+
+}
+
+.leaves span:nth-child(3) {
+
+    left: 45%;
+
+    animation-duration: 14s;
+
+    animation-delay: 6s;
+
+}
+
+.leaves span:nth-child(4) {
+
+    left: 65%;
+
+    animation-duration: 18s;
+
+    animation-delay: 1s;
+
+}
+
+.leaves span:nth-child(5) {
+
+    left: 80%;
+
+    animation-duration: 15s;
+
+    animation-delay: 4s;
+
+}
+
+.leaves span:nth-child(6) {
+
+    left: 95%;
+
+    animation-duration: 19s;
+
+    animation-delay: 7s;
+
+}
+
+
+/* ==========================================
+   GLASS EFFECT
+========================================== */
+
+.card,
+.item,
+.audioCards div,
+#quoteBox {
+
+    border: 1px solid rgba(255, 255, 255, .12);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .25);
+
+}
+
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+
+    width: 12px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #07150d;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #4caf50;
+
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #6fe26f;
+
+}
+
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes fadeDown {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(-70px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+@keyframes fadeUp {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(60px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+@keyframes leafFall {
+
+    0% {
+
+        transform: translateY(-120px) rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    10% {
+
+        opacity: .5;
+
+    }
+
+    50% {
+
+        transform: translateY(50vh) translateX(30px) rotate(180deg);
+
+    }
+
+    100% {
+
+        transform: translateY(110vh) translateX(-50px) rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-12px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+@keyframes glow {
+
+    0% {
+
+        box-shadow: 0 0 10px rgba(72, 199, 116, .2);
+
+    }
+
+    50% {
+
+        box-shadow: 0 0 30px rgba(72, 199, 116, .6);
+
+    }
+
+    100% {
+
+        box-shadow: 0 0 10px rgba(72, 199, 116, .2);
+
+    }
+
+}
+
+
+/* ==========================================
+   APPLY FLOAT EFFECT
+========================================== */
+
+.card {
+
+    animation: float 6s ease-in-out infinite;
+
+}
+
+.hero button {
+
+    animation: glow 3s infinite;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:991px) {
+
+    nav {
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    nav ul {
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 52px;
+
+    }
+
+    .hero-content p {
+
+        font-size: 18px;
+
+        line-height: 32px;
+
+    }
+
+    .title {
+
+        font-size: 40px;
+
+    }
+
+    .about h2 {
+
+        font-size: 36px;
+
+    }
+
+    .card img {
+
+        height: 280px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .hero {
+
+        background-attachment: scroll;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 42px;
+
+    }
+
+    .hero-content p {
+
+        font-size: 17px;
+
+    }
+
+    section {
+
+        padding: 70px 8%;
+
+    }
+
+    #quoteBox {
+
+        font-size: 20px;
+
+        line-height: 35px;
+
+        padding: 30px;
+
+    }
+
+    .item h3 {
+
+        font-size: 25px;
+
+    }
+
+    .card h3 {
+
+        font-size: 28px;
+
+    }
+
+    footer h3 {
+
+        font-size: 25px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .hero-content h1 {
+
+        font-size: 34px;
+
+    }
+
+    .hero-content p {
+
+        font-size: 16px;
+
+        line-height: 30px;
+
+    }
+
+    .hero button {
+
+        padding: 14px 28px;
+
+        font-size: 16px;
+
+    }
+
+    .logo {
+
+        font-size: 24px;
+
+    }
+
+    nav a {
+
+        font-size: 15px;
+
+    }
+
+    #quotes h2 {
+
+        font-size: 36px;
+
+    }
+
+    #quoteBox {
+
+        font-size: 18px;
+
+    }
+
+}
