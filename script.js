@@ -1,6 +1,3 @@
-// ================================
-// QUOTES
-// ================================
 
 const quotes = [
 
@@ -37,10 +34,6 @@ function newQuote() {
 window.onload = newQuote;
 
 
-// ================================
-// PARALLAX HERO
-// ================================
-
 window.addEventListener("scroll", () => {
 
     let scroll = window.pageYOffset;
@@ -50,11 +43,6 @@ window.addEventListener("scroll", () => {
     hero.style.backgroundPositionY = scroll * 0.4 + "px";
 
 });
-
-
-// ================================
-// SCROLL REVEAL
-// ================================
 
 const revealElements = document.querySelectorAll(
 
@@ -96,11 +84,6 @@ window.addEventListener("scroll", reveal);
 
 reveal();
 
-
-// ================================
-// ACCORDION
-// ================================
-
 const items = document.querySelectorAll(".item");
 
 items.forEach(item => {
@@ -113,10 +96,6 @@ items.forEach(item => {
 
 });
 
-
-// ================================
-// BREATHING EXERCISE
-// ================================
 
 let breathing = false;
 
@@ -195,21 +174,6 @@ function breathingExercise() {
 }
 
 
-// // ================================
-// // DARK MODE
-// // ================================
-
-// function toggleTheme() {
-
-//     document.body.classList.toggle("light");
-
-// }
-
-
-// ================================
-// BACK TO TOP
-// ================================
-
 const topBtn = document.createElement("button");
 
 topBtn.innerHTML = "↑";
@@ -261,10 +225,6 @@ topBtn.onclick = () => {
 };
 
 
-// ================================
-// NAVIGATION ACTIVE LINK
-// ================================
-
 const sections = document.querySelectorAll("section");
 
 const navLinks = document.querySelectorAll("nav ul li a");
@@ -300,10 +260,6 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ================================
-// CARD HOVER SOUND
-// ================================
-
 const cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
@@ -321,11 +277,6 @@ cards.forEach(card => {
     });
 
 });
-
-
-// ================================
-// RANDOM BACKGROUND OPACITY
-// ================================
 
 setInterval(() => {
 
